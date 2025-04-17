@@ -1,0 +1,20 @@
+import Link from "next/link";
+
+export const metadata = {
+  title: "404 Not Found",
+};
+function NotFound() {
+  return (
+    <main className="text-center space-y-6 mt-4">
+      <h1 className="text-3xl font-semibold">Cabin could not be found :(</h1>
+      <a
+        href="/cabins"
+        className="inline-block bg-accent-500 text-primary-800 px-6 py-3 text-lg"
+      >
+        Back To All Cabins
+      </a>
+    </main>
+  );
+}
+
+export default NotFound;
